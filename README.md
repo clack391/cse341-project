@@ -4,18 +4,18 @@ This project is a REST API for managing contacts, built with Node.js, Express, a
 
 ## 🚀 Deployment
 
-**Render Link**: (Add your Render URL here after deployment)
+**Render Link**: https://cse341-project-b06h.onrender.com
 
 ## 🛠 Prerequisites
 
 - Node.js
 - MongoDB Atlas Account
-- VS Code (Recommended)
-- REST Client Extension (Recommended)
+- VS Code 
+- REST Client Extension 
 
 ## 📦 Installation & Setup
 
-1.  **Clone the repository** (if not already done).
+1.  **Clone the repository**.
 2.  **Install dependencies**:
     ```bash
     npm install
