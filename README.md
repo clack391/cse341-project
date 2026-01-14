@@ -45,6 +45,37 @@ This project is a REST API for managing contacts, built with Node.js, Express, a
 - **GET /contacts/:id**
 - Returns: A single contact object matching the ID.
 
+## 🧪 Week 2: Testing Guide
+
+You can test the new CRUD operations using **Swagger UI** or the **REST Client**.
+
+### Option 1: Swagger UI (Easiest)
+1.  **Start the server**: `npm start`
+2.  Open your browser to: [http://localhost:8080/api-docs](http://localhost:8080/api-docs)
+3.  **Create a Contact**:
+    - Click **POST /contacts**.
+    - Click **Try it out**.
+    - Edit the JSON body (change the name/email).
+    - Click **Execute**.
+    - Copy the `insertedId` from the Response body.
+4.  **Update a Contact**:
+    - Click **PUT /contacts/{id}**.
+    - Click **Try it out**.
+    - Paste the ID you just copied.
+    - Edit the JSON body.
+    - Click **Execute**. (Expect 204 No Content)
+5.  **Delete a Contact**:
+    - Click **DELETE /contacts/{id}**.
+    - Click **Try it out**.
+    - Paste the ID.
+    - Click **Execute**. (Expect 204 No Content)
+
+### Option 2: VS Code REST Client
+1.  Open `routes.rest` in VS Code.
+2.  Click the small "Send Request" text above each URL.
+3.  For Create/Update, make sure to change the JSON data if you want to see differences.
+    - **Note**: For PUT and DELETE, you must replace the hardcoded ID in `routes.rest` with a real ID from your database.
+
 ## 📹 Video Submission Guide
 
 For your submission video, make sure to demonstrate the following to score full points on the rubric:
